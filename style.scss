@@ -9,7 +9,6 @@
     margin: 0 auto;
     max-width: 1384px;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 a{
@@ -76,7 +75,7 @@ a{
     .elp{
         width: 1330px;
         height: 167px;
-        flex-shrink: 0;
+        background-image: url("img/Ellipse\ 3.png");
         background: linear-gradient(278deg, rgba(255, 156, 84, 0.40) 0%, rgba(255, 255, 255, 0.22) 45.99%, rgba(0, 0, 0, 0.00) 100%), radial-gradient(104.42% 95.46% at 42.78% 42.58%, #621ABE 0%, rgba(36, 33, 75, 0.00) 100%);
         opacity: 0.8399999737739563;
         filter: blur(100px);
@@ -102,40 +101,44 @@ body{
         nav{
             color: rgba(97, 97, 97, 1);
             padding: 20px;
-            .nav-left{
-                display: flex;
-                gap: 28px;
-                align-items: center;
-                a{
-                    i{
-                        font-size: 24px;
+            .container{
+                justify-content: space-between;
+                .nav-left{
+                    display: flex;
+                    gap: 28px;
+                    align-items: center;
+                    a{
+                        i{
+                            font-size: 24px;
+                        }
                     }
                 }
-            }
-            .nav-right{
-                ul{
-                    display: flex;
-                    list-style: none;
-                    flex-wrap: wrap;
-                    align-items: center;
-                    gap: 28px;
-                    li:nth-child(4){
-                        width: 181px;
-                        height: 51px;
-                        border-radius: 8px;
-                        padding: 16px 20px;
-                        background: transparent; 
+                .nav-right{
+                    ul{
+                        display: flex;
+                        list-style: none;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        gap: 28px;
+                        li:nth-child(4){
+                            width: 181px;
+                            height: 51px;
+                            border-radius: 8px;
+                            padding: 16px 20px;
+                            background: transparent; 
+                        }
+                        li:nth-child(4):hover{
+                            background: rgba(130, 130, 138, 0.20);
+                            color: #fff;
+                        }
+    
                     }
-                    li:nth-child(4):hover{
-                        background: rgba(130, 130, 138, 0.20);
-                        color: #fff;
-                    }
-
                 }
             }
         }
         section{
             .container{
+                justify-content: space-between;
                 flex-direction: column;
                 align-items: center;
                 position: relative;
@@ -208,6 +211,7 @@ body{
         }
         #works{
             .container{
+                justify-content: space-between;
                 max-width: 1334px;
                 row-gap: 20px;
                 padding-bottom: 180px;
@@ -242,6 +246,7 @@ body{
         }
         #XP-block{
             .container{
+                justify-content: space-between;
                 flex-direction: column;
                 align-items: center;
                 gap: 72px;
@@ -306,7 +311,11 @@ body{
             }
         }
         #review{
+            padding: 141px 0 141px 0;
             .container{
+                max-width: 1567px;
+                display: flex;
+                gap: 23px;
                 .card{
                     width: 507px;
                     height: 434px;
@@ -353,6 +362,15 @@ body{
                             b{
                                 color: #0067F6;
                             }
+                        }
+                        p{
+                            width: 445px;
+                            color: #EEE;
+                            text-align: center;
+                            font-size: 22px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 32px;
                         }
 
                     }

@@ -11,7 +11,6 @@
   margin: 0 auto;
   max-width: 1384px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -30,33 +29,37 @@ body header nav {
   color: rgb(97, 97, 97);
   padding: 20px;
 }
-body header nav .nav-left {
+body header nav .container {
+  justify-content: space-between;
+}
+body header nav .container .nav-left {
   display: flex;
   gap: 28px;
   align-items: center;
 }
-body header nav .nav-left a i {
+body header nav .container .nav-left a i {
   font-size: 24px;
 }
-body header nav .nav-right ul {
+body header nav .container .nav-right ul {
   display: flex;
   list-style: none;
   flex-wrap: wrap;
   align-items: center;
   gap: 28px;
 }
-body header nav .nav-right ul li:nth-child(4) {
+body header nav .container .nav-right ul li:nth-child(4) {
   width: 181px;
   height: 51px;
   border-radius: 8px;
   padding: 16px 20px;
   background: transparent;
 }
-body header nav .nav-right ul li:nth-child(4):hover {
+body header nav .container .nav-right ul li:nth-child(4):hover {
   background: rgba(130, 130, 138, 0.2);
   color: #fff;
 }
 body header section .container {
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
   position: relative;
@@ -143,6 +146,7 @@ body main #logos .container .text1 p {
   line-height: normal;
 }
 body main #works .container {
+  justify-content: space-between;
   max-width: 1334px;
   row-gap: 20px;
   padding-bottom: 180px;
@@ -445,6 +449,7 @@ body main #works .container .card9 .card-text h5 p {
   line-height: 127.023%;
 }
 body main #XP-block .container {
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
   gap: 72px;
@@ -452,7 +457,7 @@ body main #XP-block .container {
 body main #XP-block .container .text-top1 .elp {
   width: 1330px;
   height: 167px;
-  flex-shrink: 0;
+  background-image: url("img/Ellipse 3.png");
   background: linear-gradient(278deg, rgba(255, 156, 84, 0.4) 0%, rgba(255, 255, 255, 0.22) 45.99%, rgba(0, 0, 0, 0) 100%), radial-gradient(104.42% 95.46% at 42.78% 42.58%, #621ABE 0%, rgba(36, 33, 75, 0) 100%);
   opacity: 0.8399999738;
   filter: blur(100px);
@@ -546,6 +551,14 @@ body main #XP-block .container .cards-box .card a {
   font-weight: 500;
   line-height: normal;
 }
+body main #review {
+  padding: 141px 0 141px 0;
+}
+body main #review .container {
+  max-width: 1567px;
+  display: flex;
+  gap: 23px;
+}
 body main #review .container .card {
   width: 507px;
   height: 434px;
@@ -594,4 +607,13 @@ body main #review .container .card .a1 h5 {
 }
 body main #review .container .card .a1 h5 b {
   color: #0067F6;
+}
+body main #review .container .card .a1 p {
+  width: 445px;
+  color: #EEE;
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
 }/*# sourceMappingURL=style.css.map */
